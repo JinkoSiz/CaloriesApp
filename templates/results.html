@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/main.css" rel="stylesheet">
+    <title>Results</title>
+</head>
+<body>
+    <main>
+        <p>Your estimated daily calorie intake is <strong>{{calories}}</strong>.</p>
+        <p>To maintain your weight, you should consume this many calories each day.</p>
+        <div class="result">
+            <a href="{{url_for('calories_form_page')}}" class="btn">Calculate Again</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/main.css" rel="stylesheet">
+    <title>Calories Form</title>
+</head>
+<body>
+    <h2>The Calories Form</h2>
+    <p>Fill in the form and click the button to get results</p>
+    <form action="/results" method="post">
+        <p>Let's get some info about you first.</p>
+        <label>{{calories_form.weight.label}}</label>
+        <input type="number" name="{{calories_form.weight.name}}" value="{{calories_form.weight.data}}" step="any">
+        <br>
+        <label>{{calories_form.height.label}}</label>
+        <input type="number" name="{{calories_form.height.name}}" value="{{calories_form.height.data}}" step="any">
+        <label>{{calories_form.age.label}}</label>
+        {{calories_form.age}}
+        <br>
+        <hr>
+        <p>Tell us where you are so that weather could be included</p>
+        <label>{{calories_form.city.label}}</label>
+        {{calories_form.city}}
+        <label>{{calories_form.country.label}}</label>
+        {{calories_form.country}}
+        <br>
+        <button type="submit" class="my-button">Calculate{{calories_form.button}}</button>
+    </form>
+</body>
+</html>
