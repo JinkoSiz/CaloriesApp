@@ -42,7 +42,7 @@ class CaloriesForm(Form):
     height = FloatField('Height (cm): ', default=180)
     age = IntegerField('Age: ', default=25)
 
-    city = StringField('City: ', default='Washington')
+    city = StringField('City: ', default='Washington DC')
     country = StringField('Country: ', default='USA')
 
     button = SubmitField('Calculate')
